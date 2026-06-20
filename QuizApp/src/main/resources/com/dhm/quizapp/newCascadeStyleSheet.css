@@ -1,0 +1,13 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 20, 2026, 1:44:00 PM
+    Author     : admin
+*/
+.Contianer {
+    -fx-alignment: center;
+    -fx-background-color: blue;
+    -fx-spacing: 15;
+}

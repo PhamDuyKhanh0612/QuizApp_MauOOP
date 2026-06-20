@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="355.0" prefWidth="330.0" styleClass="Contianer" stylesheets="@newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dhm.quizapp.PrimaryController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="QuizApp" />
+      <Button layoutX="10.0" layoutY="51.0" mnemonicParsing="false" onAction="#manageQuestion" text="Quản Lý Câu Hỏi" />
+      <Button mnemonicParsing="false" onAction="#pratice" text="Luyện Tập" />
+      <Button mnemonicParsing="false" onAction="#exam" text="Luyện Thi" />
+      <ComboBox fx:id="cbThemes" onAction="#change" prefWidth="150.0" />
+   </children>
+</VBox>
