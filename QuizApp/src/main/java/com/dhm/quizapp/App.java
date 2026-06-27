@@ -1,5 +1,6 @@
 package com.dhm.quizapp;
 
+import com.dhm.utils.MyConnectionSingleton;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,11 +18,20 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        scene = new Scene(loadFXML("primary"), 400, 480);
         stage.setScene(scene);
         stage.show();
     }
 
+    @Override
+    public void stop() throws Exception {
+        super.stop(); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        
+        MyConnectionSingleton.getInstance().close();
+    }
+
+    
+    
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
     }
