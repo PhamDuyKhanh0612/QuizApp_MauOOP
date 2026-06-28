@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
@@ -10,5 +11,6 @@
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subject" text="Quản Lý Câu Hỏi" />
       <TextArea prefHeight="124.0" prefWidth="600.0" />
       <ComboBox fx:id="cb" prefWidth="150.0" styleClass="button" />
+      <TableView fx:id="tbv" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </VBox>

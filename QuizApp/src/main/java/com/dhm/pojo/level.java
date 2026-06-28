@@ -22,8 +22,11 @@ public class level {
         this.note = note;
     }
 
-    
-    
+    @Override
+    public String toString() {
+        return this.name;
+    }
+
     /**
      * @return the id
      */
